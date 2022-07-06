@@ -36,7 +36,9 @@
   in {
     packages.x86_64-linux.default = ./.;
     hydraJobs = {
-    build = pkgs.umoria;
+      build = pkgs.bash.overrideAttrs(old: {
+        name = "bash-sdgfrtgrtefg"; # To trigger Hydra
+      });
     };
   };
 }
