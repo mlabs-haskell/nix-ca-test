@@ -37,7 +37,7 @@
     packages.x86_64-linux.default = ./.;
     hydraJobs = {
       build = pkgs.bash.overrideAttrs(old: {
-        name = "bash-sdgfrtgrtghhjghefg"; # To trigger Hydra
+        name = "bash-sdgfrtgrtghhfghfghgjghefg"; # To trigger Hydra
       });
     };
   };
