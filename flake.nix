@@ -36,7 +36,7 @@
   in {
     packages.x86_64-linux.default = ./.;
     hydraJobs = {
-    build = pkgs.bash;
+    build = pkgs.umoria;
     };
   };
 }
