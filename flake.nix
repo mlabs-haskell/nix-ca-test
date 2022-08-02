@@ -5,7 +5,7 @@
   outputs = { self, nixpkgs }@inputs: let
     pkgs = import nixpkgs {
       system = "x86_64-linux";
-      config = { contentAddressedByDefault = true; };
+      # config = { contentAddressedByDefault = true; };
     };
     ca-bar = pkgs.stdenv.mkDerivation {
       name = "ca-bar";
