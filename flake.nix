@@ -36,9 +36,9 @@
   in {
     packages.x86_64-linux.default = ./.;
     hydraJobs = {
-      build = pkgs.umoria.overrideAttrs(old: {
-        name = "umoria-ggdfhberrwr"; # To trigger Hydra
-      });
+      build = pkgs.nethack;#.overrideAttrs(old: {
+        #name = "umoria-ggdfhberrwr"; # To trigger Hydra
+      #});
     };
   };
 }
